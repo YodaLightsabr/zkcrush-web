@@ -1,0 +1,73 @@
+*:not(h1, h2, h3, h4, h5, h6, p) {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: limegreen;
+    font-family: monospace;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    padding: 80px 0px;
+    max-width: min(800px, calc(100vw - 60px));
+    margin: 0px auto;
+}
+
+a {
+    font-weight: bold;
+    text-underline-offset: 3px;
+    transition: 0.2s text-underline-offset;
+}
+
+a:hover {
+    text-underline-offset: 1px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid limegreen;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+    text-underline-offset: 3px;
+    transition: 0.2s text-underline-offset;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button:active:not([disabled]), button:hover:active:not([disabled]) {
+    background-color: limegreen;
+    color: black;
+}
+
+button:hover {
+    background-color: #32cd3233;
+    color: limegreen;
+}
+
+button.inline {
+    padding: 6px;
+}
+
+button[disabled] {
+    background-color: #32cd3233;
+    border: none;
+    color: limegreen;
+    cursor: auto;
+}
+
+button:hover {
+    text-underline-offset: 1px;
+}
+
+button > * {
+    margin: 0px;
+    padding: 0px;
+}
